@@ -1,0 +1,591 @@
+<html>
+  <head>
+    <title>HOME</title>
+    <style type="text/css">
+      body {
+        background: #b9c7da;
+      }
+
+      #toparea {
+        height: 120px;
+        width: 100%;
+        float: left;
+        background: #b9c7da;
+        margin: 0;
+        border: solid 8px #091a32;
+        border-top: transparent;
+      }
+      #toplogo {
+        height: 100px;
+        width: 100px;
+        background: #b9c7da;
+        float: left;
+        margin: 10px;
+      }
+      #toplogo img {
+        border-radius: 50%;
+        margin: 5px;
+      }
+      #topmenu {
+        height: 50px;
+        font-size: 25px;
+        background: #b9c7da;
+        float: right;
+        margin: 35px 0;
+      }
+      #topmenu ul {
+        display: flex;
+        float: right;
+      }
+      #topmenu ul li {
+        text-align: center;
+      }
+      #topmenu ul li a {
+        margin: 10px 10px;
+        padding: 5px;
+        text-decoration: none;
+        color: #091a32;
+      }
+      #topmenu ul li a:hover {
+        background-color: #091a32;
+        color: #fff;
+        font-size: 30px;
+        border-radius: 5px;
+      }
+      #menu {
+        height: 100px;
+        width: 100%;
+        font-size: 20px;
+        background: #b9c7da;
+        float: left;
+        margin: 5px 0px;
+        border: solid 3px rgb(7, 15, 43);
+      }
+      #menuleft {
+        height: 100px;
+        width: 170px;
+        float: left;
+        background: rgb(7, 15, 43);
+      }
+      #side {
+        height: 100px;
+        width: 70px;
+        background: rgb(7, 15, 43);
+        float: left;
+      }
+      #shape {
+        height: 100px;
+        width: 100px;
+        float: left;
+      }
+      #box1 {
+        height: 50%px;
+        width: 100%;
+        background: #b9c7da;
+        display: block;
+      }
+      #box2 {
+        height: 50%;
+        width: 100%;
+        background: rgb(7, 15, 43);
+      }
+      #s1 {
+        height: 50%;
+        width: 50%;
+        background: rgb(7, 15, 43);
+        border-radius: 0 75% 0 0;
+      }
+      #s2 {
+        height: 50px;
+        width: 50px;
+        background: #b9c7da;
+        border-radius: 0 0 0 75%;
+        float: right;
+      }
+      #menuoption {
+        height: 100px;
+        width: ;
+        background: ;
+        float: left;
+      }
+      #menuoption ul {
+        display: flex;
+        font-size: 25px;
+        margin-right: 500px;
+        text-align: center;
+      }
+
+      #menuoption ul li a {
+        margin: 10px 10px;
+        padding: 5px;
+        text-decoration: none;
+        color: #091a32;
+      }
+      #menuoption ul li a:hover {
+        background-color: #091a32;
+        color: #fff;
+        font-size: 30px;
+        border-radius: 5px;
+      }
+      #menuright {
+        height: 100px;
+        width: 170px;
+        background: #091a32;
+        float: right;
+      }
+      #shapeR {
+        height: 100px;
+        width: 100px;
+        background: #b9c7da;
+      }
+      #box1R {
+        height: 50%px;
+        width: 100%;
+        background: #b9c7da;
+        display: block;
+      }
+      #box2R {
+        height: 50%px;
+        width: 100%;
+        background: #091a32;
+        float: right;
+      }
+      #s1R {
+        height: 50%;
+        width: 50%;
+        background: #b9c7da;
+        float: left;
+      }
+      #s2R {
+        height: 50px;
+        width: 50px;
+        background: #091a32;
+        border-radius: 75% 0 0 0;
+        float: left;
+      }
+      #s3R {
+        height: 50px;
+        width: 50px;
+        background: #b9c7da;
+        border-radius: 0 0 75% 0;
+        float: left;
+      }
+      #s4R {
+        height: 50px;
+        width: 50px;
+        background: #091a32;
+        float: left;
+      }
+      #welcome {
+        height: 500px;
+        width: 100%;
+        background: #b9c7da;
+        float: left;
+        margin: 5px 0px;
+      }
+      #welcomeimage {
+        height: 500px;
+        width: 40%;
+        float: left;
+        background: red;
+        border-radius: 20px;
+      }
+      #welcomeimage img {
+        border-radius: 20px;
+      }
+
+      #welcomeslide {
+        height: 450%;
+        width: 60%;
+        float: left;
+
+        margin: 15px 0;
+      }
+      #suggestion {
+        height: 1500px;
+        width: 45%;
+        background: #b9c7da;
+        float: left;
+        overflow: auto;
+      }
+
+      .suggestionbox {
+        height: 300px;
+        width: 1000px;
+        background-color: #b9c7da;
+        margin: 10px 0;
+        padding: 0 20px;
+      }
+      .suggestionimg {
+        height: 250px;
+        width: 200;
+        margin-top: 20px;
+        margin-left: 30px;
+        background: red;
+        transform: skew(-15deg);
+        box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.5),
+          5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+        float: left;
+      }
+      .suggestionimg img,
+      .suggestionimg {
+        height: 251px;
+        width: 200;
+        border-radius: 20px 20px 0 20px;
+        z-index: 1000;
+      }
+      .suggestiontext {
+        height: 230px;
+        width: 600px;
+        border-radius: 0 20px 0 0;
+        background: #b9c7da;
+        margin: 40px 0;
+        transform: skew(-15deg);
+        box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.5),
+          5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+        float: left;
+      }
+      .suggestiontext h1 {
+        font-size: 50;
+        text-align: center;
+        font-weight: bold;
+      }
+      .suggestiontext p {
+        font-size: 20;
+        text-align: left;
+        font-weight: bold;
+        padding-left: 5px;
+      }
+
+      #tranding {
+        height: 1500px;
+        width: 35%;
+        
+        background: #b9c7da;
+        float: right;
+        overflow: auto;
+        justify-content: center;
+        align-items: center;
+      }
+      .trandingbox {
+        height: 500px;
+        width: 600px;
+        margin: 20px 10%;
+        background-color: #b9c7da;
+        float: right;
+      }
+      .trandingtext {
+        height: 230px;
+        width: 600px;
+        background: #b9c7da;
+        margin-top: 220px;
+        margin-left: 50px;
+        border-radius: 20px;
+        box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.5),
+          5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .trandingtext P{
+        font-size: 20PX;
+        display: flex;
+        
+        
+      }
+
+      .trandingimg {
+        height: 290px;
+        width: 250;
+        margin-bottom: 350px;
+        background: red;
+        border-radius: 20px 20px 70px 70px;
+        box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.5),
+          5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+        z-index: 200;
+      }
+      #tranding img {
+        height: 290px;
+        width: 250;
+      }
+      .trandingimg img {
+        height: 290px;
+        width: 250;
+        border-radius: 20px 20px 70px 70px;
+        box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.5),
+          5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+      }
+
+      #location {
+        height: 1000px;
+        width: 100%;
+        background: #653131;
+        float: left;
+      }
+      #footer {
+        height: 1000px;
+        width: 100%;
+        background: #171414;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainarea">
+      <div id="toparea">
+        <div id="toplogo">
+          <img src="logo.jpg" alt="logo" height="100px" />
+        </div>
+        <div id="topmenu">
+          <ul type="none">
+            <li><a href="#">Log in</a></li>
+            <li><a href="#">Favarite tour</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="menu">
+        <div id="menuleft">
+          <div id="side"></div>
+          <div id="shape">
+            <div id="box1">
+              <div id="s1"></div>
+            </div>
+            <div id="box2">
+              <div id="s2"></div>
+            </div>
+          </div>
+        </div>
+        <div id="menuoption">
+          <ul type="none">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PACKAGES</a></li>
+            <li><a href="#">PLACE</a></li>
+            <li><a href="#">HOTEL</a></li>
+            <li><a href="#">RESTURENT </a></li>
+            <li><a href="#">HELP </a></li>
+          </ul>
+        </div>
+        <div id="menuright">
+          <div id="shapeR">
+            <div id="box1R">
+              <div id="s1R"></div>
+              <div id="s2R"></div>
+            </div>
+            <div id="box2R">
+              <div id="s3R"></div>
+              <div id="s4R"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div id="welcome">
+          <div id="welcomeimage">
+            <img src="welcome.jpg" height="500px" width="100%" />
+          </div>
+          <div id="welcomeslide">
+            <img src="ram.jpg" height="450px" width="100%" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- here i creating suggestion section -->
+
+    <div id="suggestion">
+      <h1> <u>SUGGESTION </u></h1>
+      <div class="suggestionbox">
+        <div class="suggestionimg">
+          <img src="Agra-imghh.jpg" alt="" height="2px" width="200px" />
+        </div>
+        <div class="suggestiontext">
+          <h1>Agra</h1>
+          <p calss="Sugtext">
+            Agra is home to the beautiful Taj Mahal. On your visit to Agra, also
+            visit Agra Fort, Fatehpur Sikri and Sikandra.
+          </p>
+        </div>
+      </div>
+      <div class="suggestionbox">
+        <div class="suggestionimg">
+          <img src="Chennai-Imghh.png" alt="img" />
+        </div>
+        <div class="suggestiontext">
+          <h1>Chennai</h1>
+          <p calss="Sugtext">
+            Chennai, the first city of the south, and capital of Tamil Nadu
+            widely known as Madras till 1996, has a rich tradition and
+            civilisation
+          </p>
+        </div>
+      </div>
+      <div class="suggestionbox">
+        <div class="suggestionimg">
+          <img src="Jaipur.jpg" alt="img" />
+        </div>
+        <div class="suggestiontext">
+          <h1>Jaipur</h1>
+          <p calss="Sugtext">
+            Built by the warrior-astronomer Raja Sawai Jai Singh II in 1727.
+            Jaipur is a charming place, which dazzles the eye of tourist
+          </p>
+        </div>
+      </div>
+      <div class="suggestionbox">
+        <div class="suggestionimg">
+          <img src="Khajuraho.jpg" alt="img" />
+        </div>
+        <div class="suggestiontext">
+          <h1>Khajuraho</h1>
+          <p calss="Sugtext">
+            The 9th to 12th century temples of Khajuraho is the evidences of the
+            architectural geniuses during the times of Chandela dynasty.
+          </p>
+        </div>
+      </div>
+      <div class="suggestionbox">
+        <div class="suggestionimg">
+          <img src="Kochi-Imghh.png" alt="img" />
+        </div>
+        <div class="suggestiontext">
+          <h1>Kochi</h1>
+          <p calss="Sugtext">
+            Formerly, Cochin, was the centre of Indian spice trade for many
+            centuries, and was known to the Yavanas (Greeks) as well as Romans
+          </p>
+        </div>
+      </div>
+      <div class="suggestionbox">
+        <div class="suggestionimg">
+          <img src="Mahabalipuram-Imghh.png" alt="img" />
+        </div>
+        <div class="suggestiontext">
+          <h1>Mahabalipuram</h1>
+          <p calss="Sugtext">
+            Mahabalipuram, located around 60 km away from Chennai in Tamil Nadu,
+            is known as the City of Temples.
+          </p>
+        </div>
+      </div>
+      <div class="suggestionbox">
+        <div class="suggestionimg">
+          <img src="Mandawa.jpg" alt="img" />
+        </div>
+        <div class="suggestiontext">
+          <h1>Mandawa</h1>
+          <p calss="Sugtext">
+            Mandawa is a picturesque town occupying the heart of the Shekhawati
+            region of Rajasthan. Visit this place and you will be reminded
+          </p>
+        </div>
+      </div>
+      <div class="suggestionbox">
+        <div class="suggestionimg">
+          <img src="Marari-beach-Imghh.png" alt="img" />
+        </div>
+        <div class="suggestiontext">
+          <h1>Marari</h1>
+          <p calss="Sugtext">
+            Upon reaching Kerala, if you ever wish to spend some time in solace,
+            by the beach, then make your way to the Marari Beach town, located
+            in the Alappuzha district
+          </p>
+        </div>
+      </div>
+      <div class="suggestionbox">
+        <div class="suggestionimg">
+          <img src="Mumbai.jpg" alt="img" />
+        </div>
+        <div class="suggestiontext">
+          <h1>Mumbai</h1>
+          <p calss="Sugtext">
+            Mumbai, is the capital city of the Indian state of Maharashtra. lies
+            on the west coast of India and has a deep natural harbour.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- here i creating tranding section -->
+    <div id="tranding">
+      <h1><u> TRANDING </u></h1>
+      <div class="trandingbox">
+        <div class="trandingtext">
+          <div class="trandingimg">
+            <img src="Mahabalipuram-Imghh.png" alt="imgame" />
+            <h2>Mahabalipuram</h2>
+            <p>
+              Mahabalipuram, located around 60 km away from Chennai in Tamil
+              Nadu, is known as the City of Temples.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="trandingbox">
+        <div class="trandingtext">
+          <div class="trandingimg">
+            <img src="Agra-imghh.jpg" alt="imgame" />
+            <h1>Agra</h1>
+            <p>
+              Agra is home to the beautiful Taj Mahal. On your visit to Agra,
+              also visit Agra Fort, Fatehpur Sikri and Sikandra.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="trandingbox">
+        <div class="trandingtext">
+          <div class="trandingimg">
+            <img src="Chennai-Imghh.png" alt="imgame" />
+            <h1>Chennai</h1>
+            <p>
+              Chennai, the first city of the south, and capital of Tamil Nadu
+              widely known as Madras till 1996, has a rich tradition and
+              civilisation
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="trandingbox">
+        <div class="trandingtext">
+          <div class="trandingimg">
+            <img src="Jaipur.jpg" alt="imgame" />
+            <h1>Jaipur</h1>
+            <p>
+              Built by the warrior-astronomer Raja Sawai Jai Singh II in 1727.
+              Jaipur is a charming place, which dazzles the eye of tourist
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="trandingbox">
+        <div class="trandingtext">
+          <div class="trandingimg">
+            <img src="Mumbai.jpg" alt="imgame" />
+            <h1>Mumbai</h1>
+            <p>
+              Mumbai, is the capital city of the Indian state of Maharashtra.
+              lies on the west coast of India and has a deep natural harbour.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="trandingbox">
+        <div class="trandingtext">
+          <div class="trandingimg">
+            <img src="Udaipur-Imghh.png" alt="imgame" />
+            <h1>Udaipur</h1>
+            <p>
+              Snuggled up beside the tranquil Lake Pichola, Udaipur is a city
+              which stands true to the heritage of being a royal counterpart of
+              Rajasthan
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="location"></div>
+    <div id="footer"></div>
+  </body>
+</html>
